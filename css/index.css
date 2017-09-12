@@ -1,6 +1,6 @@
 @font-face {
   font-family: time-font;
-  src: url('../font/HelveticaNeue Bold.ttf') format('truetype');
+  src: url('../font/HelveticaNeueLTPro-HvCn.otf') format('OpenType');
   font-weight: normal;
   font-style: normal;
 }
@@ -211,16 +211,18 @@ header img {
   z-index: 99999;
 }
 .day .day-head .day-img-l {
-  /*width: 0.32rem;
-      height: 0.32rem;*/
+  width: 0.17rem;
+  height: 0.3rem;
   float: left;
   margin-left: 0.68rem;
+  margin-top: 0.1rem;
 }
 .day .day-head .day-img-r {
-  /* width: 0.32rem;
-      height: 0.32rem;*/
+  width: 0.17rem;
+  height: 0.3rem;
   float: right;
   margin-right: 0.68rem;
+  margin-top: 0.1rem;
 }
 .day .day-head h2 {
   width: 4.36rem;
@@ -246,8 +248,7 @@ header img {
   color: #1f1f25;
   font-size: 0.48rem;
   margin: 0.2rem 0;
-  opacity: 0.2;
-  background-color: #788296;
+  background-color: rgba(120, 130, 150, 0.2);
 }
 .day .close-div {
   width: 100%;
