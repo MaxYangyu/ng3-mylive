@@ -1,6 +1,6 @@
 @font-face {
   font-family: time-font;
-  src: url('../font/HelveticaNeueLTPro-HvCn.otf') format('OpenType');
+  src: url('../font/HelveticaNeue-BoldCond.otf') format('OpenType');
   font-weight: normal;
   font-style: normal;
 }
@@ -46,6 +46,7 @@ header img {
   margin-right: 0.34rem;
 }
 .list .row p {
+  font-family: time-font;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -57,7 +58,7 @@ header img {
 .list .row h2 {
   font-weight: 700;
   font-size: 0.48rem;
-  font-family: "Helvetica Neue CondensedBold";
+  font-family: time-font;
   text-align: center;
   margin-top: 0.2rem;
   margin-bottom: 0.15rem;
