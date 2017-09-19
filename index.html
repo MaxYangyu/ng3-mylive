@@ -137,15 +137,10 @@
             <div class="swiper-slide ">08.01-2017.08.10</div>
             <div class="swiper-slide ">08.11-2017.08.20</div>
             <div class="swiper-slide ">08.21-2017.08.30</div>
+
         </div>
     </div>
-    <!--<div class="day-list" id="wrapper">
-        <ul>
-            <li class="day-pic">08.01-2017.08.10</li>
-            <li class="day-pic active">08.11-2017.08.20</li>
-            <li class="day-pic">08.21-2017.08.30</li>
-        </ul>
-    </div>-->
+
     <div class="close-div">
         <img src="img/black_close@2x.png" alt="" class="close-img">
     </div>
@@ -161,13 +156,20 @@
 
 
 <script>
-    var mySwiper = new Swiper('.swiper-container',{
-        virtualTranslate : true,
-        /*setWrapperSize :true,*/
-        initialSlide :2,
-        direction : 'vertical',
-        speed:30,
-        
-    });
+    $(function () {
+        var mySwiper = new Swiper('.swiper-container',{
+            virtualTranslate : true,
+            setWrapperSize :true,
+            initialSlide :2,
+            direction : 'vertical',
+            speed:300,
+            onClick:function (swiper) {
+                $('.time').html($('.swiper-slide-active').html())
+                $('.day').css('display','none');
+                hideOverlay();
+            }
+        });
+    })
+
 </script>
 </html>

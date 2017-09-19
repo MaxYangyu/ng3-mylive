@@ -7,12 +7,14 @@ $('.img-model').on('click',function () {
 
     }
 });
+
 $('.close-img').on('click',function () {
     if($('#overlay').css('display','block') && $('.day').css('display','block')){
         hideOverlay()
         $('.day').css('display','none')
     }
 });
+
 /* 显示遮罩层 */
 function showOverlay() {
     $("#overlay").height(pageHeight());
