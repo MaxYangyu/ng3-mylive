@@ -14,7 +14,7 @@
 </head>
 <body>
 <header>
-    <p class="time">2017.08.10-2017.08.20</p>
+    <p class="time">08.21-2017.08.30</p>
     <p>本期直播数据</p>
     <img src="img/arr_down@2x.png" class="fr img-responsive img-model">
 </header>
@@ -156,15 +156,20 @@
 
 
 <script>
+
     $(function () {
+        $('.time').html($('.swiper-slide-active').html())
         var mySwiper = new Swiper('.swiper-container',{
             virtualTranslate : true,
             setWrapperSize :true,
             initialSlide :2,
             direction : 'vertical',
             speed:300,
+            slidesPerView :'auto',
             onClick:function (swiper) {
+
                 $('.time').html($('.swiper-slide-active').html())
+                $('.time').html($(swiper.clickedSlide).html())
                 $('.day').css('display','none');
                 hideOverlay();
             }
