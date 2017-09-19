@@ -167,10 +167,11 @@
             speed:300,
             slidesPerView :'auto',
             onClick:function (swiper) {
-
-                $('.time').html($('.swiper-slide-active').html())
+                console.log(swiper.clickedSlide)
                 $('.time').html($(swiper.clickedSlide).html())
-                $('.day').css('display','none');
+                $($(swiper.clickedSlide).siblings()).removeClass('swiper-slide-active')
+                $(swiper.clickedSlide).addClass('swiper-slide-active')
+             $('.day').css('display','none');
                 hideOverlay();
             }
         });
