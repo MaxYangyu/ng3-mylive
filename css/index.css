@@ -226,7 +226,7 @@ header img {
   margin-top: 0.1rem;
 }
 .day .day-head h2 {
-  width: 4.36rem;
+  width: 4.7rem;
   font-family: time-font;
   padding: 0;
   margin: 0 ;
@@ -236,15 +236,15 @@ header img {
   margin: 0 auto;
   text-align: center;
 }
-.day .day-list {
+.day .swiper-container {
   padding-top: 0.78rem;
 }
-.day .day-list ul .day-pic {
+.day .swiper-container .swiper-wrapper .swiper-slide {
   text-align: center;
   font-size: 0.36rem;
   color: #788296;
 }
-.day .day-list ul .active {
+.day .swiper-container .swiper-wrapper .swiper-slide-active {
   line-height: 1rem;
   color: #1f1f25;
   font-size: 0.48rem;

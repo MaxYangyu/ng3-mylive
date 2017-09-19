@@ -9,6 +9,7 @@
     <title>我的直播</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -130,13 +131,21 @@
         <h2>2017.08</h2>
         <img src="img/arr_right@2x.png" class="day-img-r img-responsive">
     </div>
-    <div class="day-list">
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide ">08.01-2017.08.10</div>
+            <div class="swiper-slide ">08.11-2017.08.20</div>
+            <div class="swiper-slide ">08.21-2017.08.30</div>
+        </div>
+    </div>
+    <!--<div class="day-list" id="wrapper">
         <ul>
             <li class="day-pic">08.01-2017.08.10</li>
             <li class="day-pic active">08.11-2017.08.20</li>
             <li class="day-pic">08.21-2017.08.30</li>
         </ul>
-    </div>
+    </div>-->
     <div class="close-div">
         <img src="img/black_close@2x.png" alt="" class="close-img">
     </div>
@@ -147,5 +156,18 @@
 <script src="js/rem.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/index.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script src="js/test.js"></script>
 
+
+<script>
+    var mySwiper = new Swiper('.swiper-container',{
+        virtualTranslate : true,
+        /*setWrapperSize :true,*/
+        initialSlide :2,
+        direction : 'vertical',
+        speed:30,
+        
+    });
+</script>
 </html>
